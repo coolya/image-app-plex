@@ -11,6 +11,6 @@ IMAGE_VOLUME_SIZE =	150G
 ## Image tools  (https://github.com/scaleway/image-tools)
 all:	docker-rules.mk
 docker-rules.mk:
-	wget -qO - http://j.mp/scw-builder | bash
+	wget -qO - https://raw.githubusercontent.com/scaleway/image-tools/master/builder/docker-rules.mk | bash
 -include docker-rules.mk
 ## Below you can add custom Makefile commands and overrides
