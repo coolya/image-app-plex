@@ -1,0 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <Preferences DlnaDeviceDiscoveryInterval="0" DlnaEnabled="0" GdmEnabled="0" ManualPortMappingMode="1" ManualPortMappingPort="443" allowedNetworks="" BonjourEnabled="0"/>

@@ -19,6 +19,9 @@ RUN apt-get -q update                   \
 	vsftpd \
 	nginx
 
+#remove defaul nginx stuff
+RUN rm /etc/nginx/sites-enabled/default
+
 ADD ./patches/ /
 # Clean rootfs from image-builder
 
