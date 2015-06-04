@@ -5,8 +5,6 @@ MAINTAINER Scaleway <kolja.dummann@logv.ws> (@dumdidum)
 # Prepare rootfs for image-builder
 RUN /usr/local/sbin/builder-enter
 
-ADD ./patches/ /
-
 RUN apt-get update && apt-get install apt-transport-https -y --force-yes
 
 RUN echo "deb https://dev2day.de/pms/ jessie main" > /etc/apt/sources.list.d/pms.list
@@ -21,6 +19,7 @@ RUN apt-get -q update                   \
 	vsftpd \
 	nginx
 
+ADD ./patches/ /
 # Clean rootfs from image-builder
 
 RUN /usr/local/sbin/builder-leave
