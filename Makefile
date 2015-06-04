@@ -2,9 +2,10 @@ DOCKER_NAMESPACE =	dumdidum/image-app-plex
 NAME =			scw-app-plex
 VERSION =		0.0.1
 VERSION_ALIASES =	0.0.1 latest
-TITLE =			Pley Media Server Image
+TITLE =			Plex Media Server
 DESCRIPTION =		Plex Media Server with SFTP access
 SOURCE_URL =		https://github.com/coolya/image-app-plex
+IMAGE_VOLUME_SIZE =	150G
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
