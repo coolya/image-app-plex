@@ -22,7 +22,7 @@ RUN apt-get -q update                   \
 #remove defaul nginx stuff
 RUN rm /etc/nginx/sites-enabled/default
 
-ADD ./patches/ /
+ADD ./configs/ /
 # Clean rootfs from image-builder
 
 RUN /usr/local/sbin/builder-leave
